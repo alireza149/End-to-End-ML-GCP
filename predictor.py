@@ -12,7 +12,7 @@ class MyPredictor(object):
 
   def predict(self, instances, **kwargs):
     inputs = np.asarray(instances)
-    preprocessed_inputs = self._preprocessor.preprocess(inputs)
+    preprocessed_inputs,y = self._preprocessor.preprocess(inputs)
     # print(preprocessed_inputs)
     outputs = self._model.predict(preprocessed_inputs)
     return outputs
