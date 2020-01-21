@@ -6,7 +6,7 @@ class MySimpleScaler(object):
 
  def preprocess(self, data):
         
-    data = pd.DataFrame(data,columns=['is_male', 'mother_age', 'plurality','gestation_weeks', 'hashmonth'])
+    data = pd.DataFrame(data,columns=['is_male', 'mother_age', 'plurality','gestation_weeks'])
     #data = data[data.weight_pounds  > 0]
     data = data[data.mother_age  > 0]
     data = data[data.plurality > 0]

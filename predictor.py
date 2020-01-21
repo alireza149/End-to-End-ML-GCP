@@ -15,7 +15,7 @@ class MyPredictor(object):
     preprocessed_inputs = self._preprocessor.preprocess(inputs)
     # print(preprocessed_inputs)
     outputs = self._model.predict(preprocessed_inputs)
-    return outputs
+    return list(outputs)
 
   @classmethod
   def from_path(cls, model_dir):
