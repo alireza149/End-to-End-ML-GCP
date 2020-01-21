@@ -22,4 +22,4 @@ class MySimpleScaler(object):
     data = data.join(one_hot)
 
 
-    return data[x_cols].rename(columns={1.0: "True", "B": "c"})
+    return data[x_cols]
